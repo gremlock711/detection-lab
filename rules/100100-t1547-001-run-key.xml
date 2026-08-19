@@ -1,0 +1,9 @@
+<rule id="100100" level="10">
+  <if_group>sysmon_eid13_detections</if_group>
+  <field name="win.eventdata.targetObject" type="pcre2">CurrentVersion</field>
+  <field name="win.eventdata.targetObject" type="pcre2">Run</field>
+  <description>Persistence: registry Run key modified - $(win.eventdata.targetObject)</description>
+  <mitre>
+    <id>T1547.001</id>
+  </mitre>
+</rule>
