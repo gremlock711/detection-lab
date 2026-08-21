@@ -13,5 +13,5 @@ Also: 4 of 5 were RunOnce, not Run. My rule matches "CurrentVersion"
 AND "Run" as separate conditions, and "RunOnce" contains "Run".
 Catching RunOnce by accident.
 
-DECISION PENDING: RunOnce is a legitimate persistence location under
-the same technique. Keep deliberately, or exclude?
+DECISION: keeping RunOnce coverage. Both Run and RunOnce are valid
+persistence locations under T1547.001. Rule covers both intentionally.
