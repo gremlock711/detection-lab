@@ -1,0 +1,12 @@
+<group name="sysmon,defense_evasion,">
+  <rule id="100102" level="12">
+    <if_group>sysmon_eid1_detections</if_group>
+    <field name="win.eventdata.image" type="pcre2">reg.exe</field>
+    <field name="win.eventdata.commandLine" type="pcre2">Logging</field>
+    <field name="win.eventdata.commandLine" type="pcre2">/d 0</field>
+    <description>Defense evasion: PowerShell logging disabled via registry - $(win.eventdata.commandLine)</description>
+    <mitre>
+      <id>T1112</id>
+    </mitre>
+  </rule>
+</group>
