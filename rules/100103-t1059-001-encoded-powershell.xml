@@ -1,0 +1,11 @@
+<group name="sysmon,execution,">
+  <rule id="100103" level="12">
+    <if_group>sysmon_eid1_detections</if_group>
+    <field name="win.eventdata.commandLine" type="pcre2">powershell</field>
+    <field name="win.eventdata.commandLine" type="pcre2">\s-e</field>
+    <description>Execution: encoded PowerShell command - $(win.eventdata.commandLine)</description>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+  </rule>
+</group>
