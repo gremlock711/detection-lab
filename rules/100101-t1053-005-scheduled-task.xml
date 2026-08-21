@@ -1,0 +1,17 @@
+# Rule 100100 false positives — observed live
+
+Edge updated itself at 13:19 and generated 5 alerts in 22 seconds:
+- Run\MicrosoftEdgeAutoLaunch_...
+- RunOnce\Delete Cached Update Binary
+- RunOnce\Delete Cached Standalone Update Binary
+- RunOnce\Uninstall 26.134.0713.0007  (x2)
+
+Predicted this yesterday — wrote that 1 event/24h reflected an
+idle box, not a tight rule. Confirmed within 24 hours.
+
+Also: 4 of 5 were RunOnce, not Run. My rule matches "CurrentVersion"
+AND "Run" as separate conditions, and "RunOnce" contains "Run".
+Catching RunOnce by accident.
+
+DECISION PENDING: RunOnce is a legitimate persistence location under
+the same technique. Keep deliberately, or exclude?
