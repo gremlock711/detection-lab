@@ -1,0 +1,10 @@
+<group name="sysmon,command_control,">
+  <rule id="100104" level="10">
+    <if_group>sysmon_eid1_detections</if_group>
+    <field name="win.eventdata.commandLine" type="pcre2">HttpBrowser/1\.0|Wget/1\.9\+cvs|Opera/8\.81</field>
+    <description>C2: known-malicious user-agent in command line - $(win.eventdata.commandLine)</description>
+    <mitre>
+      <id>T1071.001</id>
+    </mitre>
+  </rule>
+</group>
