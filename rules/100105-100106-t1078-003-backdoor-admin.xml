@@ -1,0 +1,19 @@
+<group name="windows,valid_accounts,">
+
+  <!-- account creation, tagged for correlation -->
+  <rule id="100105" level="5">
+    <if_group>adduser</if_group>
+    <description>Account created (watch for privilege grant) - $(win.eventdata.targetUserName)</description>
+  </rule>
+
+  <!-- admin group change within 30s of an account creation -->
+  <rule id="100106" level="13" timeframe="30">
+    <if_matched_sid>100105</if_matched_sid>
+    <if_sid>60154</if_sid>
+    <description>Backdoor admin: account created AND added to Administrators within 30s</description>
+    <mitre>
+      <id>T1078.003</id>
+    </mitre>
+  </rule>
+
+</group>
