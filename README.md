@@ -55,7 +55,7 @@ Eight ATT&CK techniques across six tactics:
 | T1071.001 | Web Protocol C2 | Command & Control | rule 100104 |
 | T1003.001 | LSASS Memory | Credential Access | blocked by Defender |
 | T1055 | Process Injection | Defense Evasion | ran undetected |
-| T1078 | Valid Accounts | Persistence / Evasion | (in progress) |
+| T1078 | Valid Accounts | Persistence / Evasion | rule 100105+100106 |
 
 The last two are findings in their own right: one technique the
 endpoint control stopped before the SIEM saw anything, and one that
