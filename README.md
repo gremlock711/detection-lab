@@ -27,7 +27,7 @@ hits its limits.
     Both VMs: 8 GB RAM / 4 vCPU, VMware Workstation Pro
     Second NIC on each (NAT) used only during build; disconnected
     during attack detonation so the victim is fully isolated.
-    ![Wazuh agent active, shipping logs from win11-victim](screenshots/agent-active.png)
+![Wazuh agent active, shipping logs from win11-victim](screenshots/agent-active.png)
 
 ## Stack
 
