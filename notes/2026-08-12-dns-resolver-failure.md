@@ -1,1 +1,0 @@
-Wazuh install failed at dependency step. Symptom looked like a package problem; actual cause was DNS. ping 8.8.8.8 worked, ping archive.ubuntu.com didn't — routing fine, resolution dead. systemd-resolved had hung. Restarted the service, resolution returned. Lesson: split the test — raw IP vs hostname — before blaming the installer.
