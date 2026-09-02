@@ -88,3 +88,5 @@ A fresh Windows 11 install failed 261 of ~395 CIS benchmark controls
 its own. I didn't dig into why out-of-box Windows scores so low against
 CIS, but it's a good reminder that "default" and "hardened" are very
 different baselines.
+
+![Fresh Windows 11 scoring 32% against CIS benchmark](screenshots/cis-benchmark.png)

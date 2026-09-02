@@ -27,6 +27,7 @@ hits its limits.
     Both VMs: 8 GB RAM / 4 vCPU, VMware Workstation Pro
     Second NIC on each (NAT) used only during build; disconnected
     during attack detonation so the victim is fully isolated.
+    ![Wazuh agent active, shipping logs from win11-victim](screenshots/agent-active.png)
 
 ## Stack
 
@@ -46,7 +47,7 @@ hits its limits.
 ## Techniques covered
 
 Eight ATT&CK techniques across six tactics:
-
+![MITRE ATT&CK coverage across six tactics](screenshots/mitre-dashboard.png)
 | ID | Technique | Tactic | Result |
 |----|-----------|--------|--------|
 | T1547.001 | Registry Run Key | Persistence | rule 100100 |
