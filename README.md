@@ -39,7 +39,8 @@ hits its limits.
 
     rules/     custom Wazuh detection rules (100100-series)
     testing/   each technique: atomic run, what fired, what didn't
-    notes/     tuning decisions, FP analysis, troubleshooting
+    notes/     build-log.md (what broke, how I fixed it) +
+               false-positives-and-negatives.md (the detection tradeoff)
     excel-access-reconciliation/  separate Excel exercise
 
 ## Techniques covered
